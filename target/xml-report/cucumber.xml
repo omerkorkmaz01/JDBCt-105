@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.245">
+    <testcase classname="DB_sorgulama" name="Staff tablosundan &quot;ID&quot; sorgulama" time="0.065">
+        <system-out><![CDATA[* Database baglantisi kurulur...............................................passed
+* Staff tablosundaki "id" leri listelenir...................................passed
+* Verilen "5" dogrulanir....................................................passed
+* Database baglantisi kapatilir.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
