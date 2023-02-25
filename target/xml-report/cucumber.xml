@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.245">
-    <testcase classname="DB_sorgulama" name="Staff tablosundan &quot;ID&quot; sorgulama" time="0.065">
-        <system-out><![CDATA[* Database baglantisi kurulur...............................................passed
-* Staff tablosundaki "id" leri listelenir...................................passed
-* Verilen "5" dogrulanir....................................................passed
-* Database baglantisi kapatilir.............................................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.07">
+    <testcase classname="DB_sorgulama" name="_2" time="1.907">
+        <failure message="Duplicate entry '92' for key 'PRIMARY'" type="java.sql.SQLIntegrityConstraintViolationException"><![CDATA[* Database baglantisi kurulur...............................................passed
+* "ali", "bak", "bakali", "alibak@gmail.com", "92", "2","123123123" girilerek user kaydi olusturulur.failed
+* user tablosundaki "id" ler listte listelenir..............................skipped
+* Olusturulan User'in "92" sinin listede oldugu dogrulanir..................skipped
+* Database baglantisi kapatilir.............................................skipped
+
+StackTrace:
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '92' for key 'PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1334)
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2084)
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1245)
+	at utilities.DBUtils.update(DBUtils.java:232)
+	at dbStepDefinition.StepDefinition.girilerek_user_kaydi_olusturulur(StepDefinition.java:89)
+	at ✽."ali", "bak", "bakali", "alibak@gmail.com", "92", "2","123123123" girilerek user kaydi olusturulur(file:///C:/Users/omerk/IdeaProjects/com.JDBCt-105/./src/test/Resources/db.feature:83)
+]]></failure>
     </testcase>
 </testsuite>

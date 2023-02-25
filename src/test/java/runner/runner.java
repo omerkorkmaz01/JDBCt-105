@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
             features = "./src/test/Resources",
             glue = {"dbStepDefinition"},
             tags = "@deneme",
-            dryRun = true
+            dryRun = false
     )
 
     public class runner{
